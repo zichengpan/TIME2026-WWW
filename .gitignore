@@ -9,17 +9,21 @@ vendor/bundle/
 *.gem
 Gemfile.lock
 
-# IDE
+# IDE & Tools
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 *~
 .DS_Store
 
+# Todo & Logs
+todo.txt
+*.todo
+
 # System
 Thumbs.db
-.DS_Store
 
 # Dependencies
 node_modules/
