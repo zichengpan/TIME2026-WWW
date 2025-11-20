@@ -1,7 +1,7 @@
 title: TIME 2026 - The Second International Workshop on Transformative Insights in Multi-faceted Evaluation
 description: The TIME 2026 workshop, organized as part of The Web Conference 2026 (WWW 2026)
 url: ""
-baseurl: ""
+baseurl: "/TIME2026-WWW"
 
 # Build settings
 plugins:
