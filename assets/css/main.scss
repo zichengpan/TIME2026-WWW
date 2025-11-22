@@ -604,11 +604,12 @@ section {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  @include transition(background-color);
+  @include transition(background-color, color);
   text-decoration: none;
 
   &:hover {
-    background-color: $color-green-dark;
+    background-color: #1f5a35;
+    color: white;
     text-decoration: none;
   }
 
@@ -724,5 +725,296 @@ table {
 
   tr:hover {
     background-color: $color-bg-secondary;
+  }
+}
+
+// Topic Cards Grid (for calls page)
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-lg;
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-lg;
+
+  @include media-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.topic-card {
+  background-color: white;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  @include transition(all, 0.25s);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(45, 122, 74, 0.1);
+    transform: translateY(-2px);
+    border-color: $color-accent;
+  }
+
+  h4 {
+    color: $color-green-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $color-text-secondary;
+    margin-bottom: 0;
+  }
+}
+
+// Announcement Cards (for media page)
+.announcements-list {
+  margin-top: $spacing-xl;
+}
+
+.announcement-card {
+  background-color: white;
+  border-left: 4px solid $color-green-primary;
+  border-radius: 4px;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  @include transition(all, 0.25s);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(45, 122, 74, 0.1);
+    transform: translateX(4px);
+  }
+
+  .announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: $spacing-md;
+    gap: $spacing-md;
+
+    @include media-mobile {
+      flex-direction: column;
+      gap: $spacing-sm;
+    }
+
+    h3 {
+      margin: 0;
+      flex: 1;
+    }
+
+    .announcement-date {
+      color: $color-text-light;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+  }
+
+  p {
+    margin-bottom: $spacing-md;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+// Timeline Styles (for important-dates page)
+.timeline {
+  position: relative;
+  padding: $spacing-lg 0;
+
+  @include media-mobile {
+    padding-left: $spacing-md;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $color-border;
+
+    @include media-mobile {
+      left: 9px;
+    }
+  }
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: $spacing-xl;
+  position: relative;
+
+  @include media-mobile {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-mobile {
+    width: 30px;
+  }
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: 3px solid $color-green-primary;
+  border-radius: 50%;
+  display: inline-block;
+
+  @include media-mobile {
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+  }
+
+  &.deadline {
+    background-color: #ff9800;
+    border-color: #ff9800;
+  }
+
+  &.notification {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+
+  &.event {
+    background-color: $color-green-primary;
+    border-color: $color-green-primary;
+    width: 18px;
+    height: 18px;
+
+    @include media-mobile {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: $spacing-lg;
+
+  @include media-mobile {
+    padding-left: $spacing-md;
+  }
+
+  h4 {
+    color: $color-green-primary;
+    margin-top: 0;
+    margin-bottom: $spacing-xs;
+  }
+
+  .timeline-date {
+    color: $color-text-light;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    margin-bottom: $spacing-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Badges for dates table
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+
+  &.badge-active {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  &.badge-deadline {
+    background-color: #ff9800;
+    color: white;
+  }
+
+  &.badge-pending {
+    background-color: #2196f3;
+    color: white;
+  }
+
+  &.badge-event {
+    background-color: $color-green-primary;
+    color: white;
+  }
+}
+
+// Dates table specific styling
+.dates-table {
+  table {
+    font-size: 0.95rem;
+
+    th {
+      background-color: $color-green-primary;
+    }
+
+    td {
+      padding: $spacing-md $spacing-sm;
+    }
+  }
+}
+
+// Recommendations Grid (for important-dates page)
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing-lg;
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-lg;
+
+  @include media-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recommendation-card {
+  background-color: white;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  @include transition(all, 0.25s);
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(45, 122, 74, 0.1);
+    transform: translateY(-4px);
+    border-color: $color-accent;
+  }
+
+  h4 {
+    color: $color-green-primary;
+    margin-bottom: $spacing-md;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $color-text-secondary;
+    margin-bottom: 0;
   }
 }
