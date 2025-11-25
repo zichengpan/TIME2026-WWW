@@ -116,7 +116,7 @@ a:hover {
 
 strong {
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 /* ===== Container ===== */
@@ -710,7 +710,7 @@ strong {
 
 .member-name {
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
   margin-bottom: var(--spacing-xs);
   font-size: 0.95rem;
 }
@@ -846,13 +846,17 @@ strong {
   margin-bottom: var(--spacing-sm);
 }
 
+.footer strong {
+  color: var(--color-primary-light);
+}
+
 .footer a {
-  color: white;
+  color: var(--color-primary-light);
   text-decoration: underline;
 }
 
 .footer a:hover {
-  color: var(--color-primary-light);
+  color: white;
 }
 
 /* ===== Page-Specific Styles ===== */
@@ -1320,7 +1324,7 @@ strong {
 
 .social-name {
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 .social-card:hover .social-name {
