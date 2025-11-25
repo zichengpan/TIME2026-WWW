@@ -2,10 +2,7 @@
   { "label": "Home", "href": "#home", "pageHref": "index.html#home" },
   { "label": "Calls", "href": "pages/calls.html", "pageHref": "calls.html" },
   { "label": "Media", "href": "pages/media.html", "pageHref": "media.html" },
-  { "label": "Overview", "href": "#overview", "pageHref": "index.html#overview" },
-  { "label": "Speakers", "href": "#speakers", "pageHref": "index.html#speakers" },
-  { "label": "Organization", "href": "#organization", "pageHref": "index.html#organization" },
-  { "label": "Important Dates", "href": "pages/important-dates.html", "pageHref": "important-dates.html" },
-  { "label": "WWW'26", "href": "pages/www.html", "pageHref": "www.html" },
-  { "label": "Contact", "href": "#contact", "pageHref": "index.html#contact" }
+  { "label": "Program", "href": "#program", "pageHref": "index.html#program" },
+  { "label": "Organisation", "href": "#organization", "pageHref": "index.html#organization" },
+  { "label": "WWW26", "href": "pages/www.html", "pageHref": "www.html" }
 ]
