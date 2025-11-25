@@ -384,6 +384,35 @@ strong {
   min-height: 350px;
 }
 
+.page-hero-corner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.page-hero-corner .container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.hero-content-corner {
+  text-align: right;
+  margin: 0;
+  padding: var(--spacing-lg) var(--spacing-md);
+  max-width: none;
+}
+
+.hero-content-corner .hero-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.hero-content-corner .hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 400px;
