@@ -53,15 +53,15 @@
   "workshopCoordinators": [
     {
       "name": "Syuan-Hao Li",
-      "image": "assets/images/dubai.jpg",
+      "image": "https://avatars.githubusercontent.com/u/72302793?v=4",
       "institution": "Griffith University",
-      "link": null
+      "link": "https://www.github.com/hibana2077"
     },
     {
       "name": "Zhicheng Zhang",
-      "image": "assets/images/dubai.jpg",
+      "image": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=ZBViSTgAAAAJ&citpid=4",
       "institution": "UNSW",
-      "link": null
+      "link": "https://scholar.google.com/citations?user=ZBViSTgAAAAJ"
     },
     {
       "name": "Zicheng Pan",
