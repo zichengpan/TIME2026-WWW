@@ -23,21 +23,6 @@
       ]
     },
     {
-      "title": "Invited Speakers Announced",
-      "date": "November 15, 2025",
-      "content": [
-        "We are honored to announce our keynote speakers:"
-      ],
-      "list": [
-        "<strong>Assoc. Prof. Wei Liu</strong> (University of Western Australia) - \"Towards Casual Reasoning Agents\"",
-        "<strong>Assoc. Prof. Rafiqul Islam</strong> (Charles Sturt University) - \"Advancing Cybersecurity: Ransomware Detection Using iCNN-LSTM+\""
-      ],
-      "link": {
-        "text": "Learn more about our speakers →",
-        "url": "../index.html#speakers"
-      }
-    },
-    {
       "title": "TIME 2025 Workshop Archive",
       "date": "Previous Edition",
       "content": [
@@ -49,6 +34,17 @@
         "url": "https://time.griffith.edu.au/workshop/time2025/",
         "external": true
       }
+    },
+    {
+        "title": "Workshop Coordinators Designation",
+        "date": "November 15, 2025",
+        "content": [
+          "We are excited to announce the designation of the workshop coordinators for TIME 2026. The coordinators will oversee the organization and execution of the workshop, ensuring a smooth and engaging experience for all participants."
+        ],
+        "link": {
+          "text": "Meet the Coordinators →",
+          "url": "../index.html#coordinators"
+        }
     },
     {
       "title": "Program Committee Assembled",
