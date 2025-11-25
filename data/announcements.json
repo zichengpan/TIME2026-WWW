@@ -1,0 +1,74 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Call for Papers Now Open",
+      "date": "November 22, 2025",
+      "featured": true,
+      "badge": "Latest",
+      "content": [
+        "The call for papers for TIME 2026 is now open. We invite researchers and practitioners to submit original, unpublished research papers addressing contemporary challenges in web technologies, responsible AI, and evaluation methodologies.",
+        "<strong>Submission Deadline:</strong> December 18, 2025 (AoE)"
+      ],
+      "link": {
+        "text": "View Call for Papers →",
+        "url": "calls.html"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Workshop Confirmed at WWW 2026",
+      "date": "November 20, 2025",
+      "featured": false,
+      "content": [
+        "TIME 2026 has been officially confirmed as a workshop at The Web Conference 2026 in Dubai, United Arab Emirates. The workshop will be held on April 13-14, 2026.",
+        "This marks the second edition of the TIME workshop, building on the successful foundation established at WWW 2025 in Sydney."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Invited Speakers Announced",
+      "date": "November 15, 2025",
+      "featured": false,
+      "content": [
+        "We are honored to announce our keynote speakers:"
+      ],
+      "list": [
+        "<strong>Assoc. Prof. Wei Liu</strong> (University of Western Australia) - \"Towards Casual Reasoning Agents\"",
+        "<strong>Assoc. Prof. Rafiqul Islam</strong> (Charles Sturt University) - \"Advancing Cybersecurity: Ransomware Detection Using iCNN-LSTM+\""
+      ],
+      "link": {
+        "text": "Learn more about our speakers →",
+        "url": "../index.html#speakers"
+      }
+    },
+    {
+      "id": 4,
+      "title": "TIME 2025 Workshop Archive",
+      "date": "Previous Edition",
+      "featured": false,
+      "content": [
+        "The first TIME workshop was held in Sydney during The Web Conference 2025. Access materials from the previous edition at the TIME 2025 archive.",
+        "The workshop featured presentations on cutting-edge research in multi-faceted evaluation, trustworthy AI, and cross-domain methodologies."
+      ],
+      "link": {
+        "text": "Visit TIME 2025 Archive →",
+        "url": "https://time.griffith.edu.au/workshop/time2025/",
+        "external": true
+      }
+    },
+    {
+      "id": 5,
+      "title": "Program Committee Assembled",
+      "date": "November 10, 2025",
+      "featured": false,
+      "content": [
+        "We are pleased to announce that our distinguished Program Committee has been assembled, bringing together experts from leading institutions worldwide to ensure high-quality peer reviews for all submissions."
+      ],
+      "link": {
+        "text": "View Program Committee →",
+        "url": "../index.html#organization"
+      }
+    }
+  ]
+}
