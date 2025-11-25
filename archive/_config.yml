@@ -1,6 +1,6 @@
 title: TIME 2026 - The Second International Workshop on Transformative Insights in Multi-faceted Evaluation
 description: The TIME 2026 workshop, organized as part of The Web Conference 2026 (WWW 2026)
-url: "https://zichengpan.github.io"
+url: ""
 baseurl: "/TIME2026-WWW"
 
 # Build settings
@@ -8,7 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Exclude files from processing
+# Exclude files
 exclude:
   - .gitignore
   - Gemfile
@@ -19,13 +19,6 @@ exclude:
   - vendor/gems
   - vendor/ruby
   - .bundle
-  - archive/
-  - README.md
-  - todo.txt
-
-# Include hidden files
-include:
-  - .htaccess
 
 # SCSS configuration
 sass:
@@ -35,19 +28,4 @@ sass:
 # Markdown settings
 markdown: kramdown
 kramdown:
-  input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-
-# Collections (if needed in future)
-# collections:
-#   papers:
-#     output: true
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
