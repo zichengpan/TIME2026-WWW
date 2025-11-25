@@ -185,12 +185,15 @@ strong {
 }
 
 .nav-item a {
+  display: inline-block;
   padding: 0.6rem 1.2rem;
   color: var(--color-text-primary);
   font-weight: 500;
   border-radius: var(--radius-full);
   transition: var(--transition-base);
   position: relative;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .nav-item a:hover,
