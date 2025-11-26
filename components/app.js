@@ -33,7 +33,6 @@ export async function initHomePage() {
   await Promise.all([
     renderHero('hero-container', { isSubpage: false }),
     renderThemes('themes-container', { isSubpage: false }),
-    renderOrganizers('organizers-container', { isSubpage: false }),
     renderContact('contact-container', { isSubpage: false })
   ]);
 }
