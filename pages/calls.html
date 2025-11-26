@@ -11,48 +11,83 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-content">
-        <a href="../index.html#home" class="nav-brand">
-          <img src="https://time.griffith.edu.au/images/logo.gif" alt="TIME Lab Logo">
-          <span class="brand-text">TIME 2026</span>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="../index.html#home">Home</a></li>
-          <li class="nav-item"><a href="../index.html#overview">Overview</a></li>
-          <li class="nav-item"><a href="../index.html#speakers">Speakers</a></li>
-          <li class="nav-item"><a href="../index.html#organization">Organization</a></li>
-          <li class="nav-item"><a href="important-dates.html">Important Dates</a></li>
-          <li class="nav-item"><a href="calls.html" class="active">Calls</a></li>
-          <li class="nav-item"><a href="media.html">Media</a></li>
-          <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Dynamic Components -->
+  <div id="navbar-container"></div>
+  <div id="hero-container"></div>
 
-  <!-- Hero Section -->
-  <section class="hero page-hero">
-    <div class="hero-background" style="background-image: url('../assets/images/uae.jpg');">
-      <div class="hero-overlay"></div>
-    </div>
+  <!-- Important Dates Section with Countdown -->
+  <section class="section section-dates">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Call for Papers</h1>
-        <p class="hero-subtitle">Submit Your Research to TIME 2026</p>
-        <div class="hero-meta">
-          <div class="meta-item">
-            <span class="meta-icon">📅</span>
-            <span>Deadline: December 18, 2025</span>
+      <div class="section-header">
+        <h2 class="section-title">Important Dates</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper">
+        <h3 class="countdown-label">Time Until Submission Deadline</h3>
+        <div class="countdown-timer" id="countdown-timer">
+          <div class="countdown-item">
+            <span class="countdown-value" id="countdown-days">--</span>
+            <span class="countdown-unit">Days</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="countdown-hours">--</span>
+            <span class="countdown-unit">Hours</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="countdown-minutes">--</span>
+            <span class="countdown-unit">Minutes</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="countdown-seconds">--</span>
+            <span class="countdown-unit">Seconds</span>
           </div>
         </div>
+      </div>
+
+      <!-- Dates Timeline -->
+      <div class="content-card">
+        <div class="dates-grid">
+          <div class="date-card deadline">
+            <div class="date-icon">📝</div>
+            <div class="date-info">
+              <h4>Paper Submission</h4>
+              <p class="date-value">December 18, 2025</p>
+              <p class="date-desc">Submit your research on OpenReview</p>
+            </div>
+          </div>
+          <div class="date-card notification">
+            <div class="date-icon">📬</div>
+            <div class="date-info">
+              <h4>Notification</h4>
+              <p class="date-value">January 13, 2026</p>
+              <p class="date-desc">Authors receive acceptance decisions</p>
+            </div>
+          </div>
+          <div class="date-card camera">
+            <div class="date-icon">📸</div>
+            <div class="date-info">
+              <h4>Camera-Ready</h4>
+              <p class="date-value">February 2, 2026</p>
+              <p class="date-desc">Final version submission deadline</p>
+            </div>
+          </div>
+          <div class="date-card event">
+            <div class="date-icon">🎤</div>
+            <div class="date-info">
+              <h4>Workshop</h4>
+              <p class="date-value">April 13-14, 2026</p>
+              <p class="date-desc">TIME 2026 at WWW 2026, Dubai</p>
+            </div>
+          </div>
+        </div>
+        <p class="dates-notice">
+          All submission deadlines are end-of-day in the Anywhere on Earth (AoE) time zone.
+        </p>
       </div>
     </div>
   </section>
@@ -94,55 +129,65 @@
           </div>
         </div>
         <div class="btn-wrapper">
-          <a href="https://openreview.net/" target="_blank" class="btn btn-primary btn-large">Submit on OpenReview</a>
+          <a href="https://openreview.net/group?id=ACM.org/TheWebConf/2026/Workshop/TIME" target="_blank" class="btn btn-primary btn-large">Submit on OpenReview</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research Topics Section -->
+  <!-- Call for Papers Section -->
   <section class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Research Topics</h2>
+        <h2 class="section-title">Call for Papers</h2>
         <div class="title-underline"></div>
       </div>
       <div class="content-card">
         <p class="lead">
-          We welcome submissions on a broad range of topics related to transformative insights in evaluation, multimodal systems, and responsible AI. Key topics include:
+          In today's digital landscape of privacy breaches, misinformation, and algorithmic bias, this workshop fosters cross-domain collaboration, applying successful techniques across fields. By bridging academia and industry, it aims to translate research into actionable solutions for modern web challenges.
         </p>
-        <div class="topics-grid">
-          <div class="topic-card">
-            <div class="topic-icon">🎯</div>
-            <h4>Evaluation Frameworks</h4>
-            <p>Responsible and cross-domain AI evaluation frameworks, cross-domain benchmarking, and methodologies for trustworthy systems assessment.</p>
-          </div>
-          <div class="topic-card">
-            <div class="topic-icon">🛡️</div>
-            <h4>Trustworthy Systems</h4>
-            <p>Trustworthy multimodal analytics, fairness, robustness, transparency, and accountability in AI systems.</p>
-          </div>
-          <div class="topic-card">
-            <div class="topic-icon">🔒</div>
-            <h4>Security & Privacy</h4>
-            <p>Privacy and security in web technologies, threat detection, and protection mechanisms for digital systems.</p>
-          </div>
-          <div class="topic-card">
-            <div class="topic-icon">⚖️</div>
-            <h4>Ethical AI</h4>
-            <p>Ethical AI applications, ethical web practices, responsible technology deployment, and domain-specific ethics.</p>
-          </div>
-          <div class="topic-card">
-            <div class="topic-icon">🏢</div>
-            <h4>Industry Applications</h4>
-            <p>Industry-academic collaboration on trustworthy AI, real-world deployment challenges, and practical solutions.</p>
-          </div>
-          <div class="topic-card">
-            <div class="topic-icon">🌟</div>
-            <h4>Emerging Areas</h4>
-            <p>Novel approaches to web mining, social network analysis, graph algorithms, and cross-domain knowledge exchange.</p>
-          </div>
-        </div>
+        
+        <h3 class="subsection-title">1. Responsible and Cross-Domain Evaluation</h3>
+        <ul class="guideline-list">
+          <li>Responsible AI evaluation (fairness, robustness, transparency, societal impact)</li>
+          <li>Trustworthy multimodal analytics (video-text, audio-text, sensor-video, etc.)</li>
+          <li>Cross-domain benchmarking frameworks (healthcare, social media, smart cities, security)</li>
+          <li>Industry collaboration: case studies, deployed systems, academic–industry evaluation work</li>
+        </ul>
+
+        <h3 class="subsection-title">2. Survey Papers</h3>
+        <ul class="guideline-list">
+          <li>Video processing techniques (compression, enhancement, analytics)</li>
+          <li>Data-centric video analytics and ML-driven video understanding</li>
+        </ul>
+
+        <h3 class="subsection-title">3. Evaluation-Focused Studies</h3>
+        <ul class="guideline-list">
+          <li>Ethical & trustworthy AI for healthcare</li>
+          <li>Security & privacy in clinical AI</li>
+          <li>Video content moderation evaluation (accuracy + ethical implications)</li>
+        </ul>
+
+        <h3 class="subsection-title">4. Methodology Reviews</h3>
+        <ul class="guideline-list">
+          <li>Data standards & annotation practices for AI/ML</li>
+          <li>Robust and interpretable LLMs for healthcare</li>
+          <li>Video analysis methods for social media content</li>
+        </ul>
+
+        <h3 class="subsection-title">5. Cross-Disciplinary Insights</h3>
+        <ul class="guideline-list">
+          <li>Smart city applications with AI-driven governance</li>
+          <li>Strategies to combat online extremism, hate speech, harassment</li>
+          <li>Human-centric video analytics (health, security, behavioral studies)</li>
+        </ul>
+
+        <h3 class="subsection-title">6. Emerging Challenges</h3>
+        <ul class="guideline-list">
+          <li>Misinformation/disinformation during crises</li>
+          <li>Quality, uncertainty & trust in discourse data</li>
+          <li>Challenges in video quality assessment</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -218,17 +263,53 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 TIME Workshop. All rights reserved.</p>
-        <p><strong>TIME Lab</strong> | Griffith University</p>
-        <p>Contact: <a href="mailto:time.lab@griffith.edu.au">time.lab@griffith.edu.au</a></p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
+  <!-- Module Script -->
+  <script type="module">
+    import { initSubpage } from '../components/app.js';
+    initSubpage({
+      title: 'Call for Papers',
+      subtitle: 'Submit Your Research to TIME 2026'
+    });
+  </script>
+  
   <script src="../assets/js/main.js"></script>
+  
+  <!-- Countdown Timer Script -->
+  <script>
+    (function() {
+      // Submission deadline: December 18, 2025, 23:59:59 AoE (UTC-12)
+      const deadlineDate = new Date('2025-12-19T11:59:59Z'); // AoE is UTC-12, so Dec 18 23:59 AoE = Dec 19 11:59 UTC
+      
+      function updateCountdown() {
+        const now = new Date();
+        const diff = deadlineDate - now;
+        
+        if (diff <= 0) {
+          document.getElementById('countdown-days').textContent = '00';
+          document.getElementById('countdown-hours').textContent = '00';
+          document.getElementById('countdown-minutes').textContent = '00';
+          document.getElementById('countdown-seconds').textContent = '00';
+          document.querySelector('.countdown-label').textContent = 'Submission Deadline Has Passed';
+          return;
+        }
+        
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+      }
+      
+      // Update immediately and then every second
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+  </script>
 </body>
 </html>

@@ -11,51 +11,9 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-content">
-        <a href="../index.html#home" class="nav-brand">
-          <img src="https://time.griffith.edu.au/images/logo.gif" alt="TIME Lab Logo">
-          <span class="brand-text">TIME 2026</span>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="../index.html#home">Home</a></li>
-          <li class="nav-item"><a href="../index.html#overview">Overview</a></li>
-          <li class="nav-item"><a href="../index.html#speakers">Speakers</a></li>
-          <li class="nav-item"><a href="../index.html#organization">Organization</a></li>
-          <li class="nav-item"><a href="important-dates.html" class="active">Important Dates</a></li>
-          <li class="nav-item"><a href="calls.html">Calls</a></li>
-          <li class="nav-item"><a href="media.html">Media</a></li>
-          <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero page-hero">
-    <div class="hero-background" style="background-image: url('../assets/images/uae.jpg');">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Important Dates</h1>
-        <p class="hero-subtitle">Key Milestones and Deadlines</p>
-        <div class="hero-meta">
-          <div class="meta-item">
-            <span class="meta-icon">📅</span>
-            <span>April 13-14, 2026</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Dynamic Components -->
+  <div id="navbar-container"></div>
+  <div id="hero-container"></div>
 
   <!-- Key Dates Section -->
   <section class="section">
@@ -199,17 +157,17 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 TIME Workshop. All rights reserved.</p>
-        <p><strong>TIME Lab</strong> | Griffith University</p>
-        <p>Contact: <a href="mailto:time.lab@griffith.edu.au">time.lab@griffith.edu.au</a></p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
+  <!-- Module Script -->
+  <script type="module">
+    import { initSubpage } from '../components/app.js';
+    initSubpage({
+      title: 'Important Dates',
+      subtitle: 'Key Milestones and Deadlines'
+    });
+  </script>
+  
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

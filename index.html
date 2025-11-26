@@ -11,59 +11,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-content">
-        <a href="#home" class="nav-brand">
-          <img src="https://time.griffith.edu.au/images/logo.gif" alt="TIME Lab Logo">
-          <span class="brand-text">TIME 2026</span>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="#overview">Overview</a></li>
-          <li class="nav-item"><a href="#speakers">Speakers</a></li>
-          <li class="nav-item"><a href="#organization">Organization</a></li>
-          <li class="nav-item"><a href="pages/important-dates.html">Important Dates</a></li>
-          <li class="nav-item"><a href="pages/calls.html">Calls</a></li>
-          <li class="nav-item"><a href="pages/media.html">Media</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-background" style="background-image: url('assets/images/uae.jpg');">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">TIME 2026</h1>
-        <p class="hero-subtitle">The Second International Workshop on Transformative Insights in Multi-faceted Evaluation</p>
-        <div class="hero-meta">
-          <div class="meta-item">
-            <span class="meta-icon">📅</span>
-            <span>April 13-14, 2026</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-icon">📍</span>
-            <span>The Web Conference 2026 (WWW 2026)</span>
-          </div>
-        </div>
-        <div class="hero-actions">
-          <a href="pages/calls.html" class="btn btn-primary">Submit Paper</a>
-          <a href="#overview" class="btn btn-outline">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Dynamic Components -->
+  <div id="navbar-container"></div>
+  <div id="hero-container"></div>
 
   <!-- Overview Section -->
   <section id="overview" class="section">
@@ -82,45 +32,6 @@
         <p>
           The workshop emphasizes actionable solutions and cross-disciplinary insights aligned with WWW 2026's objectives, bridging theoretical research and real-world applications.
         </p>
-      </div>
-
-      <div class="themes-section">
-        <h3 class="subsection-title">Call for Papers Themes</h3>
-        <p class="themes-intro">
-          We invite submissions across six thematic areas that address contemporary challenges in web technologies and responsible AI:
-        </p>
-        <div class="themes-grid">
-          <div class="theme-card">
-            <div class="theme-icon">🎯</div>
-            <h4>Responsible and Cross-Domain Evaluation</h4>
-            <p>Frameworks and methodologies for assessing fairness, robustness, transparency, and trustworthy multimodal systems</p>
-          </div>
-          <div class="theme-card">
-            <div class="theme-icon">📊</div>
-            <h4>Survey Nature</h4>
-            <p>Comprehensive overviews of specific fields, methodologies, and findings; identifying trends and knowledge gaps</p>
-          </div>
-          <div class="theme-card">
-            <div class="theme-icon">🔍</div>
-            <h4>Evaluation Focus</h4>
-            <p>Critical evaluations of existing solutions in healthcare AI, security, privacy, and content moderation</p>
-          </div>
-          <div class="theme-card">
-            <div class="theme-icon">⚙️</div>
-            <h4>Methodologies Review</h4>
-            <p>Critiques and improvements to data annotation standards, LLM interpretability, and video analysis methods</p>
-          </div>
-          <div class="theme-card">
-            <div class="theme-icon">🤝</div>
-            <h4>Cross-Disciplinary Insights</h4>
-            <p>Interdisciplinary discussions on smart cities, online extremism, and human-centric analytics</p>
-          </div>
-          <div class="theme-card">
-            <div class="theme-icon">🚀</div>
-            <h4>Emerging Challenges</h4>
-            <p>Addressing misinformation, data quality and trust, and video quality assessment</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -142,144 +53,17 @@
     </div>
   </section>
 
-  <!-- Organization Section -->
-  <section id="organization" class="section">
+  <!-- Organization Section (moved to its own page) -->
+  <section id="organization" class="section section-alt">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Organization</h2>
         <div class="title-underline"></div>
       </div>
-
-      <h3 class="subsection-title">Workshop Organizers</h3>
-      <div class="organizers-grid">
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="https://leiwangr.github.io/images/lw.jpg" alt="Dr. Lei Wang">
-          </div>
-          <h4 class="organizer-name"><a href="https://experts.griffith.edu.au/50888-lei-wang" target="_blank">Dr. Lei Wang</a></h4>
-          <p class="organizer-institution">Griffith University & Data61/CSIRO</p>
-          <p class="organizer-bio">Research in cross-domain evaluation and trustworthy AI systems.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="https://dxybwjmxea64j.cloudfront.net/md-zakir-hossain-4fd95ece.jpg?ver=0.024987017549913837" alt="Dr. Md Zakir Hossain">
-          </div>
-          <h4 class="organizer-name"><a href="https://staffportal.curtin.edu.au/staff/profile/view/md-zakir-hossain-4fd95ece/" target="_blank">Dr. Md Zakir Hossain</a></h4>
-          <p class="organizer-institution">Curtin University</p>
-          <p class="organizer-bio">Expertise in multimodal analytics and responsible AI.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="https://dxybwjmxea64j.cloudfront.net/tom-gedeon-5e48a1fd.jpg?ver=0.6675092052777616" alt="Prof. Tom Gedeon">
-          </div>
-          <h4 class="organizer-name"><a href="https://staffportal.curtin.edu.au/staff/profile/view/tom-gedeon-5e48a1fd/" target="_blank">Prof. Tom Gedeon</a></h4>
-          <p class="organizer-institution">Curtin University</p>
-          <p class="organizer-bio">Specialization in evaluation methodologies and benchmarking.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="assets/images/shamsul.jpg" alt="Dr Syed Islam">
-          </div>
-          <h4 class="organizer-name"><a href="https://www.ecu.edu.au/schools/science/staff/profiles/senior-lecturers/sislam" target="_blank">Dr Syed Islam</a></h4>
-          <p class="organizer-institution">Edith Cowan University</p>
-          <p class="organizer-bio">Research in healthcare AI evaluation and ethics.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="assets/images/rafiqul.jpeg" alt="Prof. Rafiqul Islam">
-          </div>
-          <h4 class="organizer-name"><a href="https://bjbs.csu.edu.au/schools/computing-mathematics-engineering/staff/profiles/professorial-staff/rafiqul-islam" target="_blank">Prof. Rafiqul Islam</a></h4>
-          <p class="organizer-institution">Charles Sturt University</p>
-          <p class="organizer-bio">Cybersecurity and trustworthy system evaluation.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="assets/images/Yasmeen.webp" alt="Dr. Yasmeen George">
-          </div>
-          <h4 class="organizer-name"><a href="https://research.monash.edu/en/persons/yasmeen-george/" target="_blank">Dr. Yasmeen George</a></h4>
-          <p class="organizer-institution">Monash University</p>
-          <p class="organizer-bio">Misinformation detection and content moderation.</p>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-image-wrapper">
-            <img src="assets/images/Shreya.jpeg" alt="Dr. Shreya Ghosh">
-          </div>
-          <h4 class="organizer-name"><a href="https://about.uq.edu.au/experts/50688" target="_blank">Dr. Shreya Ghosh</a></h4>
-          <p class="organizer-institution">The University of Queensland</p>
-          <p class="organizer-bio">Advanced analytics and evaluation frameworks.</p>
-        </div>
+      <div class="content-card">
+        <p>The full list of workshop organisers has moved to its own page.</p>
+        <p><a class="button" href="pages/organization.html">View Organisation Page</a></p>
       </div>
-
-      <h3 class="subsection-title" style="margin-top: 3rem;">Workshop Coordinators</h3>
-      <div class="coordinators-grid">
-        <div class="coordinator-card">
-          <div class="coordinator-image-wrapper">
-            <img src="assets/images/dubai.jpg" alt="Syuan-Hao Li" class="coordinator-image">
-          </div>
-          <h4 class="coordinator-name">Syuan-Hao Li</h4>
-          <p class="coordinator-institution">Griffith University</p>
-        </div>
-        <div class="coordinator-card">
-          <div class="coordinator-image-wrapper">
-            <img src="assets/images/dubai.jpg" alt="Zhicheng Zhang" class="coordinator-image">
-          </div>
-          <h4 class="coordinator-name">Zhicheng Zhang</h4>
-          <p class="coordinator-institution">UNSW</p>
-        </div>
-        <div class="coordinator-card">
-          <div class="coordinator-image-wrapper">
-            <img src="https://raw.githubusercontent.com/zichengpan/zichengpan.github.io/main/assets/img/profile.jpg" alt="Zicheng Pan" class="coordinator-image">
-          </div>
-          <h4 class="coordinator-name"><a href="https://zichengpan.github.io/" target="_blank">Zicheng Pan</a></h4>
-          <p class="coordinator-institution">Griffith University</p>
-        </div>
-      </div>
-
-      <!--
-      <h3 class="subsection-title" style="margin-top: 3rem;">Program Committee</h3>
-      <div class="committee-grid">
-        <div class="committee-member">
-          <div class="member-name">Dr. Alice Smith</div>
-          <div class="member-institution">University A</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Bob Johnson</div>
-          <div class="member-institution">University B</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Carol Chen</div>
-          <div class="member-institution">University C</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Diana Lee</div>
-          <div class="member-institution">University D</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Edward Brown</div>
-          <div class="member-institution">University E</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Fiona White</div>
-          <div class="member-institution">University F</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. George Davis</div>
-          <div class="member-institution">University G</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Helen Martinez</div>
-          <div class="member-institution">University H</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Ivan Garcia</div>
-          <div class="member-institution">University I</div>
-        </div>
-        <div class="committee-member">
-          <div class="member-name">Dr. Julia Torres</div>
-          <div class="member-institution">University J</div>
-        </div>
-      </div>
-      -->
     </div>
   </section>
 
@@ -290,52 +74,18 @@
         <h2 class="section-title">Contact & Information</h2>
         <div class="title-underline"></div>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-icon">✉️</div>
-          <h4>Get in Touch</h4>
-          <p>For questions regarding the TIME 2026 workshop, please don't hesitate to reach out to us:</p>
-          <p class="contact-info">
-            <strong>Email:</strong><br>
-            <a href="mailto:time.lab@griffith.edu.au">time.lab@griffith.edu.au</a>
-          </p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">🌐</div>
-          <h4>Websites</h4>
-          <p class="contact-info">
-            <strong>Workshop Website:</strong><br>
-            <a href="https://time.griffith.edu.au" target="_blank">time.griffith.edu.au</a>
-          </p>
-          <p class="contact-info">
-            <strong>WWW 2026 Conference:</strong><br>
-            <a href="https://www2026.thewebconf.org" target="_blank">www2026.thewebconf.org</a>
-          </p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">📱</div>
-          <h4>More Information</h4>
-          <p>Visit our official website and resources:</p>
-          <div class="social-links">
-            <a href="https://time.griffith.edu.au" target="_blank" class="social-link">Official Website</a>
-            <a href="#" class="social-link">GitHub</a>
-          </div>
-        </div>
-      </div>
+      <div id="contact-container"></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 TIME Workshop. All rights reserved.</p>
-        <p><strong>TIME Lab</strong> | Griffith University</p>
-        <p>Contact: <a href="mailto:time.lab@griffith.edu.au">time.lab@griffith.edu.au</a></p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
+  <!-- Module Script -->
+  <script type="module">
+    import { initHomePage } from './components/app.js';
+    initHomePage();
+  </script>
+  
   <script src="assets/js/main.js"></script>
 </body>
 </html>
