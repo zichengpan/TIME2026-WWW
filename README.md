@@ -108,7 +108,8 @@ Make sure to use correct paths:
 ## 📧 Contact
 
 For questions or issues:
-- Email: time.workshop@griffith.edu.au
+
+- Email: time.lab@griffith.edu.au
 - Website: https://time.griffith.edu.au
 
 ## 📄 License
