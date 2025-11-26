@@ -36,7 +36,9 @@ export async function renderContact(containerId, options = {}) {
           <p>Visit our official website and resources:</p>
           <div class="social-links">
             <a href="${site.websites.workshop}" target="_blank" class="social-link">Official Website</a>
-            <a href="#" class="social-link">GitHub</a>
+            <a href="${site.websites.github}" class="social-link">GitHub</a>
+            <a href="${site.websites.twitter}" class="social-link">Twitter</a>
+            <a href="${site.websites.linkedin}" class="social-link">LinkedIn</a>
           </div>
         </div>
       </div>`;
