@@ -69,5 +69,17 @@
       "institution": "Griffith University",
       "link": "https://zichengpan.github.io/"
     }
+  ],
+  "programCommittee": [
+    {
+      "name": "TBD",
+      "institution": ""
+    }
+  ],
+  "awardCommittee": [
+    {
+      "name": "TBD",
+      "institution": ""
+    }
   ]
 }

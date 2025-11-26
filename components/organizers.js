@@ -37,6 +37,30 @@ export async function renderOrganizers(containerId, options = {}) {
         </div>`;
     }).join('');
     
+    // Render Program Committee
+    const programCommitteeHtml = data.programCommittee ? data.programCommittee.map(member => {
+      const nameHtml = member.link 
+        ? `<a href="${member.link}" target="_blank">${member.name}</a>`
+        : member.name;
+      return `
+        <div class="committee-member">
+          <span class="committee-name">${nameHtml}</span>
+          ${member.institution ? `<span class="committee-institution">${member.institution}</span>` : ''}
+        </div>`;
+    }).join('') : '<div class="committee-member"><span class="committee-name">TBD</span></div>';
+
+    // Render Award Committee
+    const awardCommitteeHtml = data.awardCommittee ? data.awardCommittee.map(member => {
+      const nameHtml = member.link 
+        ? `<a href="${member.link}" target="_blank">${member.name}</a>`
+        : member.name;
+      return `
+        <div class="committee-member">
+          <span class="committee-name">${nameHtml}</span>
+          ${member.institution ? `<span class="committee-institution">${member.institution}</span>` : ''}
+        </div>`;
+    }).join('') : '<div class="committee-member"><span class="committee-name">TBD</span></div>';
+
     const html = `
       <h3 class="subsection-title">Workshop Organizers</h3>
       <div class="organizers-grid">
@@ -46,6 +70,16 @@ export async function renderOrganizers(containerId, options = {}) {
       <h3 class="subsection-title" style="margin-top: 3rem;">Workshop Coordinators</h3>
       <div class="coordinators-grid">
         ${coordinatorsHtml}
+      </div>
+
+      <h3 class="subsection-title" style="margin-top: 3rem;">Program Committee</h3>
+      <div class="committee-grid">
+        ${programCommitteeHtml}
+      </div>
+
+      <h3 class="subsection-title" style="margin-top: 3rem;">Award Committee</h3>
+      <div class="committee-grid">
+        ${awardCommitteeHtml}
       </div>`;
     
     document.getElementById(containerId).innerHTML = html;

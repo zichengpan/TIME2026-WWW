@@ -291,7 +291,7 @@ strong {
 /* ===== Hero Section ===== */
 .hero {
   position: relative;
-  min-height: 500px;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,7 +381,7 @@ strong {
 }
 
 .page-hero {
-  min-height: 350px;
+  min-height: 50vh;
 }
 
 .page-hero-corner {
@@ -415,11 +415,11 @@ strong {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 400px;
+    min-height: 50vh;
   }
   
   .page-hero {
-    min-height: 300px;
+    min-height: 40vh;
   }
   
   .hero-title {
@@ -803,16 +803,31 @@ strong {
   transform: translateY(-2px);
 }
 
-.member-name {
+.member-name,
+.committee-name {
   font-weight: 600;
   color: var(--color-primary);
   margin-bottom: var(--spacing-xs);
   font-size: 0.95rem;
+  display: block;
 }
 
-.member-institution {
+.committee-name a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.committee-name a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.member-institution,
+.committee-institution {
   font-size: 0.85rem;
   color: var(--color-text-light);
+  display: block;
 }
 
 @media (max-width: 768px) {
