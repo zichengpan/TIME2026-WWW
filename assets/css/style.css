@@ -1296,19 +1296,6 @@ strong {
   box-shadow: var(--shadow-md);
 }
 
-.announcement-badge {
-  position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  box-shadow: var(--shadow-sm);
-}
-
 .announcement-header {
   display: flex;
   justify-content: space-between;
@@ -1360,12 +1347,6 @@ strong {
   
   .announcement-date {
     white-space: normal;
-  }
-  
-  .announcement-badge {
-    position: static;
-    display: inline-block;
-    margin-bottom: var(--spacing-sm);
   }
 }
 
