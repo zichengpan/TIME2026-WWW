@@ -25,6 +25,11 @@ function renderAnnouncementCard(announcement) {
     linkHtml = `<a href="${announcement.link.url}" class="announcement-link"${targetAttr}>${announcement.link.text}</a>`;
   }
 
+  // Render signature if exists (format: [S1], [S2], etc.)
+  const signatureHtml = announcement.signature 
+    ? `<div class="announcement-signature">${announcement.signature}</div>` 
+    : '';
+
   return `
         <article class="announcement-card${featuredClass}">
           <div class="announcement-header">
@@ -35,6 +40,7 @@ function renderAnnouncementCard(announcement) {
             ${contentHtml}
             ${listHtml}
             ${linkHtml}
+            ${signatureHtml}
           </div>
         </article>`;
 }
