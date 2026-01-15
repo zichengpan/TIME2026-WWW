@@ -72,60 +72,48 @@
   ],
   "programCommittee": [
     {
-      "name": "Fuman Xie",
-      "institution": "University of Queensland (Area Chair)"
-    },
-    {
-      "name": "Zicheng Pan",
-      "institution": "Griffith University (Area Chair)"
-    },
-    {
       "name": "Ashutosh Ahuja",
       "institution": "Starbucks (Area Chair)"
+    },
+    {
+      "name": "Fuman Xie",
+      "institution": "University of Queensland (Area Chair)"
     },
     {
       "name": "Xiaohan Yu",
       "institution": "Macquarie University (Area Chair)"
     },
     {
-      "name": "Sudarshan Badireddi",
-      "institution": "Kennesaw State University"
+      "name": "Zicheng Pan",
+      "institution": "Griffith University (Area Chair)"
     },
     {
       "name": "Akshar Prabhu Desai",
       "institution": "Google"
     },
     {
-      "name": "Theodore Tochukwu Omeche",
-      "institution": "Bells University of Technology"
-    },
-    {
-      "name": "Tianyi Yao",
-      "institution": "Microsoft"
-    },
-    {
-      "name": "Shaofeng Liang",
-      "institution": "China University of Petroleum"
-    },
-    {
-      "name": "Md Sarwar Kamal",
-      "institution": "University of New South Wales"
-    },
-    {
-      "name": "Shrinivass Arunachalam Balasubramanian",
-      "institution": "Fidelity Investments"
+      "name": "Aniket Devle",
+      "institution": "University of The Cumberlands"
     },
     {
       "name": "Arpit Sharma",
       "institution": "Visvesvaraya Technological University"
     },
     {
-      "name": "Aniket Devle",
-      "institution": "University of The Cumberlands"
+      "name": "Edwin Kwadwo Tenagyei",
+      "institution": "Griffith University"
     },
     {
-      "name": "Sathish Ramkumar",
-      "institution": "Intuit"
+      "name": "Haosen Li",
+      "institution": "Ocean University of China"
+    },
+    {
+      "name": "Jemshit Iskanderov",
+      "institution": "Touro University"
+    },
+    {
+      "name": "Kazi Mohammed Amanat Kamal",
+      "institution": "Charles Sturt University"
     },
     {
       "name": "Lucy Lu",
@@ -136,24 +124,36 @@
       "institution": "Charles Sturt University"
     },
     {
-      "name": "Edwin Kwadwo Tenagyei",
-      "institution": "Griffith University"
+      "name": "Md Sarwar Kamal",
+      "institution": "University of New South Wales"
     },
     {
-      "name": "Jemshit Iskanderov",
-      "institution": "Touro University"
+      "name": "Sathish Ramkumar",
+      "institution": "Intuit"
+    },
+    {
+      "name": "Shaofeng Liang",
+      "institution": "China University of Petroleum"
+    },
+    {
+      "name": "Shrinivass Arunachalam Balasubramanian",
+      "institution": "Fidelity Investments"
+    },
+    {
+      "name": "Sudarshan Badireddi",
+      "institution": "Kennesaw State University"
+    },
+    {
+      "name": "Theodore Tochukwu Omeche",
+      "institution": "Bells University of Technology"
+    },
+    {
+      "name": "Tianyi Yao",
+      "institution": "Microsoft"
     },
     {
       "name": "Yi-Jui Huang",
       "institution": "National Yang Ming Chiao Tung University"
-    },
-    {
-      "name": "Haosen Li",
-      "institution": "Ocean University of China"
-    },
-    {
-      "name": "Kazi Mohammed Amanat Kamal",
-      "institution": "Charles Sturt University"
     }
   ],
   "awardCommittee": [
